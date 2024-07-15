@@ -1,5 +1,27 @@
+import java.util.Scanner;
+
+import javax.sound.midi.Soundbank;
+
 public class ContaTerminal {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+        Scanner entrada = new Scanner(System.in);
+        System.out.println("Seja bem vindo!!");
+        System.out.println();
+
+        System.out.println("Por favor, digite o seu nome completo: ");
+        String nomeCliente = entrada.nextLine();
+
+        System.out.println("Por favor, digite o número da agência: ");
+        String agencia = entrada.nextLine();
+
+        System.out.println("Por favor, digite o número da sua conta: ");
+        Integer numero = Integer.parseInt(entrada.nextLine());
+
+        System.out.println("Por favor, digite o saldo de sua conta: ");
+        Float saldo = Float.parseFloat(entrada.nextLine());
+
+
+
+
     }
 }
